@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Main Menu.unity
+    guid: 72c8bf7bcf2fdbc468668d690fdba435
+  - enabled: 1
+    path: Assets/Matthew M/House Scene.unity
+    guid: 0b9f2763c221ebb41a1eda04efbbc996
+  - enabled: 1
+    path: Assets/Matthew M/Town Scene.unity
+    guid: 8f9a3af2ef29f12488cef80152c683ce
+  - enabled: 1
+    path: Assets/Matthew M/Battle Scene Outdoors.unity
+    guid: ffef68a8662b2a246bac6f3160f497d2
+  - enabled: 1
+    path: Assets/Matthew M/Town Scene 2.unity
+    guid: 74ec4c2b0e1930e45a04074e38e3d8ed
+  - enabled: 1
+    path: Assets/Matthew M/Battle Scene.unity
+    guid: 2e6dcd918e636d74796b253c2eb37052
+  - enabled: 1
+    path: Assets/Matthew M/Battle Scene Robot.unity
+    guid: 4958bc6fac967f94891324015cf9a7a6
+  - enabled: 1
+    path: Assets/Game_Scenes/Puzzle_Building_F1.unity
+    guid: 88d51774bbff18a49b1069ac270745a3
+  - enabled: 1
+    path: Assets/Game_Scenes/boss room.unity
+    guid: e81d76449640f7c409393012c13c91a4
+  - enabled: 1
+    path: Assets/Game_Scenes/BILLY.unity
+    guid: 2715945e43c86754482dc2c20cbb3a7a
+  - enabled: 1
+    path: Assets/Credits.unity
+    guid: e4b1d7006cd0f8543aed86a192697cce
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 2c31d4130e21c4b47a2e9cee2fc71179, type: 2}
