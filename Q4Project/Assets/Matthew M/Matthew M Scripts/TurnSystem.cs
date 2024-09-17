@@ -84,6 +84,11 @@ public class TurnSystem : MonoBehaviour
 
     void PlayerTurn()
     {
+        if (PlayerRPG.currentHP <= 0)
+        {
+            state = BattleState.LOSE;
+            StartCoroutine(EndBattle());
+        }
         BulletBox.SetActive(false);
         Heart.SetActive(false);
         UI.SetActive(true);

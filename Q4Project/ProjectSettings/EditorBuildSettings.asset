@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Credits.unity
     guid: e4b1d7006cd0f8543aed86a192697cce
+  - enabled: 1
+    path: Assets/Matthew M/Game Over.unity
+    guid: 33d61f818227ae34da02fcee2795266c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2c31d4130e21c4b47a2e9cee2fc71179, type: 2}
