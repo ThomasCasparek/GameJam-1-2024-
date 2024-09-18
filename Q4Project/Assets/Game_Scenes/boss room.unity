@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.62352943}
+  m_Color: {r: 0.1509434, g: 0.12175152, b: 0.12175152, a: 0.62352943}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7225,9 +7225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'click here to Continue
-
-    >'
+  m_text: Click here to Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7828,7 +7826,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1346791578}
   - component: {fileID: 1346791577}
-  - component: {fileID: 1346791576}
   - component: {fileID: 1346791575}
   - component: {fileID: 1346791574}
   - component: {fileID: 1346791573}
@@ -7893,7 +7890,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1346791576}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -7953,25 +7950,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1346791576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346791571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf48093c2ee75d4992b562e3a84815a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movSpeed: 10
-  Interact: 0
-  interactRange: 30
-  Interactable:
-    serializedVersion: 2
-    m_Bits: 0
-  SavePosition: {fileID: 1346791571}
 --- !u!212 &1346791577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8960,7 +8938,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1856941911
 RectTransform:
