@@ -52,10 +52,12 @@ public class PlayerCtrl : MonoBehaviour
         if (Mathf.Abs(speedX) > Mathf.Abs(speedY))
         {
             speedY = 0;
+            animator.SetInteger("MovPos", 1);
         }
         else
         {
             speedX = 0;
+            animator.SetInteger("MovPos", 0);
         }
 
         rb.velocity = new Vector2(speedX, speedY);
