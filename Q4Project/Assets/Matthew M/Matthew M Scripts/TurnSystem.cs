@@ -66,7 +66,7 @@ public class TurnSystem : MonoBehaviour
         {
             PlayerText.text = PlayerRPG.PlayerName + ": 0 HP";
         }
-        PlayerText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
+        PlayerText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ | " + "L: " + PlayerRPG.Level;
         if (badguy.enemyHP > 0)
         {
             EnemyText.text = badguy.EnemyName + ": " + badguy.enemyHP + " HP";
@@ -100,7 +100,7 @@ public class TurnSystem : MonoBehaviour
             }
         }
         SkillsMenu.SetActive(false);
-        PlayerText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
+        PlayerText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ | " + "L: " + PlayerRPG.Level;
         if (badguy.enemyHP > 0)
         {
             EnemyText.text = badguy.EnemyName + ": " + badguy.enemyHP + " HP";
@@ -168,18 +168,17 @@ public class TurnSystem : MonoBehaviour
         {
             NeutralText.text = "You Win!";
             NeutralSkillText.text = "You Win!";
-            PlayerRPG.EXP += 5;
-            if (PlayerRPG.EXP > 20)
+            PlayerRPG.EXP += badguy.enemyEXP;
+            if (PlayerRPG.EXP >= (PlayerRPG.Level * 20))
             {
                 yield return new WaitForSeconds(2f);
                 NeutralText.text = "Level Up!";
                 NeutralSkillText.text = "Level Up!";
                 PlayerRPG.MaxHP += 5;
-                PlayerRPG.currentHP = PlayerRPG.MaxHP;
-                PlayerRPG.maxIQ += 2;
+                PlayerRPG.currentHP = 0 + PlayerRPG.MaxHP;
+                PlayerRPG.maxIQ += 4;
                 PlayerRPG.currentIQ = PlayerRPG.maxIQ;
                 PlayerRPG.strength += 1;
-                PlayerRPG.defense += 1;
                 PlayerRPG.intellect += 1;
                 PlayerRPG.Eva += 1;
                 PlayerRPG.Luck += 1;
@@ -237,7 +236,7 @@ public class TurnSystem : MonoBehaviour
         NewtallText.SetActive(true);
         EmemyText.SetActive(true);
         PayerText.SetActive(true);
-        PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
+        PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ | " + "L: " + PlayerRPG.Level;
         if (badguy.enemyHP > 0)
         {
             EnemySkillText.text = badguy.EnemyName + ": " + badguy.enemyHP + " HP";
@@ -337,7 +336,7 @@ public class TurnSystem : MonoBehaviour
     {
         NeutralSkillText.text = "BILLY BRAWL!";
         PlayerRPG.currentIQ -= 10;
-        PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
+        PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ | " + "L: " + PlayerRPG.Level;
         bool isDead = enemy.GetComponent<EnemyRPG>().TakeDamage(PlayerRPG.strength * 2);
         yield return new WaitForSeconds(1f);
         NeutralSkillText.text = "Billy did " + (PlayerRPG.strength * 2) + " Damage!";
@@ -351,10 +350,10 @@ public class TurnSystem : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
 
-        if (isDead)
+        if (badguy.enemyHP <= 0)
         {
             state = BattleState.WIN;
-            EndBattle();
+            StartCoroutine(EndBattle());
         }
         else
         {
@@ -440,10 +439,10 @@ public class TurnSystem : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
 
-        if (isDead)
+        if (badguy.enemyHP <= 0)
         {
             state = BattleState.WIN;
-            EndBattle();
+            StartCoroutine(EndBattle());
         }
         else
         {

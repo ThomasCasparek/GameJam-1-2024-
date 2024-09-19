@@ -268,8 +268,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -649, y: -267}
-  m_SizeDelta: {x: 379.846, y: 50}
+  m_AnchoredPosition: {x: -545.1106, y: -267}
+  m_SizeDelta: {x: 587.6249, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &262387592
 CanvasRenderer:
@@ -870,7 +870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: AIC Agent
   enemyHP: 10
-  enemydamage: 2
+  enemydamage: 3
+  enemyEXP: 20
 --- !u!212 &353956005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3135,8 +3136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -489.68192, y: -181}
-  m_SizeDelta: {x: 334.0363, y: 50}
+  m_AnchoredPosition: {x: -417.59, y: -181}
+  m_SizeDelta: {x: 478.23, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1251658696
 CanvasRenderer:
@@ -4470,6 +4471,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8829283863731541454, guid: cc7ca1acc5fcb3a4187b17e1e54882e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829283863731541455, guid: cc7ca1acc5fcb3a4187b17e1e54882e9, type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

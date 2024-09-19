@@ -7,6 +7,7 @@ public class EnemyRPG : MonoBehaviour
     public string EnemyName;
     public int enemyHP;
     public int enemydamage;
+    public int enemyEXP;
 
     public bool TakeDamage(int damage)
     {

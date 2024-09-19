@@ -6,6 +6,7 @@ public class RandomEncounterTown : MonoBehaviour
 {
     public flick loadbattlescene;
     public GameObject player;
+    public int EncounterChance;
 
     void Start()
     {
@@ -15,9 +16,9 @@ public class RandomEncounterTown : MonoBehaviour
     IEnumerator CheckForScene()
     {
         yield return new WaitForSeconds(1f);
-        if (Random.Range(1, 101) <= 7)
+        if (Random.Range(1, 101) <= EncounterChance)
         {
-            if (player.GetComponent<Rigidbody2D>().velocity.x > 0 || player.GetComponent<Rigidbody2D>().velocity.y > 0)
+            if (player.GetComponent<Rigidbody2D>().velocity.x != 0 || player.GetComponent<Rigidbody2D>().velocity.y != 0)
             {
                 loadbattlescene.UniqueExit();
             }

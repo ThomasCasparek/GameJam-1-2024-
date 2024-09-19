@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8829283863731541455, guid: cc7ca1acc5fcb3a4187b17e1e54882e9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cc7ca1acc5fcb3a4187b17e1e54882e9, type: 3}
@@ -273,6 +277,7 @@ MonoBehaviour:
   EnemyName: Robot
   enemyHP: 30
   enemydamage: 5
+  enemyEXP: 100
 --- !u!212 &78929889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -677,8 +682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -489.68192, y: -181}
-  m_SizeDelta: {x: 334.0363, y: 50}
+  m_AnchoredPosition: {x: -434.5416, y: -181}
+  m_SizeDelta: {x: 444.3169, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &353950640
 CanvasRenderer:
@@ -2597,8 +2602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -649, y: -267}
-  m_SizeDelta: {x: 379.846, y: 50}
+  m_AnchoredPosition: {x: -557.3329, y: -267}
+  m_SizeDelta: {x: 563.1802, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &705900486
 CanvasRenderer:
