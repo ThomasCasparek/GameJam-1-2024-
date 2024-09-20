@@ -176,7 +176,7 @@ public class TurnSystem : MonoBehaviour
                 NeutralSkillText.text = "Level Up!";
                 PlayerRPG.MaxHP += 5;
                 PlayerRPG.currentHP = 0 + PlayerRPG.MaxHP;
-                PlayerRPG.maxIQ += 4;
+                PlayerRPG.maxIQ += 5;
                 PlayerRPG.currentIQ = PlayerRPG.maxIQ;
                 PlayerRPG.strength += 1;
                 PlayerRPG.intellect += 1;
@@ -250,37 +250,37 @@ public class TurnSystem : MonoBehaviour
         if (PlayerRPG.Level < 2)
         {
             Skill1.text = "LOCKED - LEVEL 2";
-            Skill2.text = "LOCKED - LEVEL 4";
-            Skill3.text = "LOCKED - LEVEL 6";
-            Skill4.text = "LOCKED - LEVEL 8";
+            Skill2.text = "LOCKED - LEVEL 5";
+            Skill3.text = "LOCKED - LEVEL 10";
+            Skill4.text = "LOCKED - LEVEL 15";
         }
         else if (PlayerRPG.Level < 4)
         {
             Skill1.text = "Fresh Corn - 5 IQ";
-            Skill2.text = "LOCKED - LEVEL 4";
-            Skill3.text = "LOCKED - LEVEL 6";
-            Skill4.text = "LOCKED - LEVEL 8";
+            Skill2.text = "LOCKED - LEVEL 5";
+            Skill3.text = "LOCKED - LEVEL 10";
+            Skill4.text = "LOCKED - LEVEL 15";
         }
         else if (PlayerRPG.Level < 6)
         {
             Skill1.text = "Fresh Corn - 5 IQ";
-            Skill2.text = "Billy Brawl - 10 IQ";
-            Skill3.text = "LOCKED - LEVEL 6";
-            Skill4.text = "LOCKED - LEVEL 8";
+            Skill2.text = "Billy Brawl - 20 IQ";
+            Skill3.text = "LOCKED - LEVEL 10";
+            Skill4.text = "LOCKED - LEVEL 15";
         }
         else if (PlayerRPG.Level < 8)
         {
             Skill1.text = "Fresh Corn - 5 IQ";
-            Skill2.text = "Billy Brawl - 10 IQ";
-            Skill3.text = "Intimidating Talk - 15 IQ";
-            Skill4.text = "LOCKED - LEVEL 8";
+            Skill2.text = "Billy Brawl - 20 IQ";
+            Skill3.text = "Intimidating Talk - 30 IQ";
+            Skill4.text = "LOCKED - LEVEL 15";
         }
         else
         {
             Skill1.text = "Fresh Corn - 5 IQ";
-            Skill2.text = "Billy Brawl - 10 IQ";
-            Skill3.text = "Intimidating Talk - 15 IQ";
-            Skill4.text = "Truck of Doom - 20 IQ";
+            Skill2.text = "Billy Brawl - 20 IQ";
+            Skill3.text = "Intimidating Talk - 30 IQ";
+            Skill4.text = "Truck of Doom - 40 IQ";
         }
     }
 
@@ -316,11 +316,11 @@ public class TurnSystem : MonoBehaviour
 
     public void OnBrawl()
     {
-        if (PlayerRPG.Level < 4)
+        if (PlayerRPG.Level < 5)
         {
             return;
         }
-        if (PlayerRPG.currentIQ < 10)
+        if (PlayerRPG.currentIQ < 20)
         {
             return;
         }
@@ -335,7 +335,7 @@ public class TurnSystem : MonoBehaviour
     public IEnumerator BillyBrawl()
     {
         NeutralSkillText.text = "BILLY BRAWL!";
-        PlayerRPG.currentIQ -= 10;
+        PlayerRPG.currentIQ -= 20;
         PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ | " + "L: " + PlayerRPG.Level;
         bool isDead = enemy.GetComponent<EnemyRPG>().TakeDamage(PlayerRPG.strength * 2);
         yield return new WaitForSeconds(1f);
@@ -364,11 +364,11 @@ public class TurnSystem : MonoBehaviour
 
     public void OnTalk()
     {
-        if (PlayerRPG.Level < 6)
+        if (PlayerRPG.Level < 10)
         {
             return;
         }
-        if (PlayerRPG.currentIQ < 15) 
+        if (PlayerRPG.currentIQ < 30) 
         {
             return;
         }
@@ -383,7 +383,7 @@ public class TurnSystem : MonoBehaviour
     public IEnumerator MeanTalk()
     {
         NeutralSkillText.text = "Billy used mean talk!";
-        PlayerRPG.currentIQ -= 15;
+        PlayerRPG.currentIQ -= 30;
         PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
         yield return new WaitForSeconds(1f);
         int meanie = Random.Range(0, 100);
@@ -405,11 +405,11 @@ public class TurnSystem : MonoBehaviour
 
     public void OnTruck()
     {
-        if (PlayerRPG.Level < 8)
+        if (PlayerRPG.Level < 15)
         {
             return;
         }
-        if (PlayerRPG.currentIQ < 20)
+        if (PlayerRPG.currentIQ < 40)
         {
             return;
         }
@@ -424,7 +424,7 @@ public class TurnSystem : MonoBehaviour
     public IEnumerator TruckTime()
     {
         NeutralSkillText.text = "Billy calls his Truck!";
-        PlayerRPG.currentIQ -= 20;
+        PlayerRPG.currentIQ -= 40;
         PlayerSkillText.text = PlayerRPG.PlayerName + ": " + PlayerRPG.currentHP + " HP | " + PlayerRPG.currentIQ + " IQ";
         yield return new WaitForSeconds(1f);
         NeutralSkillText.text = "It does massive damage!";
