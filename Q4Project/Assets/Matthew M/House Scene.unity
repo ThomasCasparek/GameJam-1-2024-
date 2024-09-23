@@ -8792,6 +8792,9 @@ MonoBehaviour:
   SavePosition: {fileID: 1754073928}
   YourLifeIsNothing: 0
   YouServeZeroPurpose: {fileID: 0}
+  MaxPos: {x: 15.97, y: 17.88}
+  MinPos: {x: -6.43, y: -6.45}
+  SpawnPoint: {x: -4.45, y: 16.67}
 --- !u!212 &1598452137
 SpriteRenderer:
   m_ObjectHideFlags: 0

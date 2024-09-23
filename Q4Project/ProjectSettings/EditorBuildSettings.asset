@@ -20,18 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Matthew M/Town Scene 2.unity
     guid: 74ec4c2b0e1930e45a04074e38e3d8ed
-  - enabled: 0
-    path: Assets/Matthew M/Battle Scene.unity
-    guid: 2e6dcd918e636d74796b253c2eb37052
   - enabled: 1
-    path: Assets/Matthew M/Battle Scene Robot.unity
-    guid: 4958bc6fac967f94891324015cf9a7a6
+    path: Assets/Matthew M/Pixelated Deluxe Scene.unity
+    guid: 48543b73673a596498a21d19e14c1d44
   - enabled: 1
-    path: Assets/Game_Scenes/Puzzle_Building_F1.unity
-    guid: 88d51774bbff18a49b1069ac270745a3
+    path: Assets/Matthew M/Battle Scene Building.unity
+    guid: d96ed303594d86d449d745f2297f7891
   - enabled: 1
     path: Assets/Game_Scenes/boss room.unity
     guid: e81d76449640f7c409393012c13c91a4
+  - enabled: 1
+    path: Assets/Matthew M/Battle Scene Robot.unity
+    guid: 4958bc6fac967f94891324015cf9a7a6
   - enabled: 1
     path: Assets/Game_Scenes/BILLY.unity
     guid: 2715945e43c86754482dc2c20cbb3a7a

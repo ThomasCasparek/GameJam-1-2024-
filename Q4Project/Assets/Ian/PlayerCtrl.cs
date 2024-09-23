@@ -18,11 +18,18 @@ public class PlayerCtrl : MonoBehaviour
     public GameObject SavePosition;
     public KeyCode YourLifeIsNothing;
     public GameObject YouServeZeroPurpose;
+    public Vector2 MaxPos;
+    public Vector2 MinPos;
+    public Vector2 SpawnPoint;
 
     // Start is called before the first frame update
     private void Awake()
     {
         transform.position = SavePosition.GetComponent<Transform>().position;
+        if (transform.position.x > MaxPos.x || transform.position.y > MaxPos.y || transform.position.x < MinPos.x || transform.position.y < MinPos.y)
+        {
+            transform.position = SpawnPoint;
+        }
     }
 
     void Start()
