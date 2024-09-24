@@ -656,7 +656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &330321934
 CircleCollider2D:
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &428918284
 CircleCollider2D:
@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &708077529
 CircleCollider2D:
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &965628255
 CircleCollider2D:
@@ -2623,7 +2623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1028060767
 CircleCollider2D:
@@ -2762,7 +2762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1040513424
 CircleCollider2D:
@@ -4029,7 +4029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1675782073
 CircleCollider2D:
@@ -4168,7 +4168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1739125455
 CircleCollider2D:
@@ -4307,7 +4307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1765792601
 CircleCollider2D:
@@ -4566,7 +4566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!61 &1772422998
 BoxCollider2D:
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!58 &1894679649
 CircleCollider2D:
@@ -5104,7 +5104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 768681838}
   enemyattack: {fileID: 353956004}
-  Heart: {fileID: 0}
+  Heart: {fileID: 2071539096}
   IFrames: 0.5
 --- !u!61 &1949497503
 BoxCollider2D:
