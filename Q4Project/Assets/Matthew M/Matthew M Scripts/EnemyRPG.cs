@@ -6,6 +6,7 @@ public class EnemyRPG : MonoBehaviour
 {
     public string EnemyName;
     public int enemyHP;
+    public int enemyMaxHP;
     public int enemydamage;
     public int enemyEXP;
 

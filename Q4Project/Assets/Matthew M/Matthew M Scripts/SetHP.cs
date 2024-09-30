@@ -7,6 +7,6 @@ public class SetHP : MonoBehaviour
     public EnemyRPG enemy;
     private void Awake()
     {
-        enemy.enemyHP = 10;
+        enemy.enemyHP = enemy.enemyMaxHP;
     }
 }

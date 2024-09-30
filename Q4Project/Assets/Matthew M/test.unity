@@ -280,8 +280,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fe9a0e1a34fabc040bd405c06c852bb7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -454,6 +454,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 10
+  Interact: 0
+  interactRange: 30
+  Interactable:
+    serializedVersion: 2
+    m_Bits: 0
+  SavePosition: {fileID: 0}
+  YourLifeIsNothing: 0
+  YouServeZeroPurpose: {fileID: 0}
+  MaxPos: {x: 0, y: 0}
+  MinPos: {x: 0, y: 0}
+  SpawnPoint: {x: 0, y: 0}
 --- !u!212 &1858275303
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1127,6 +1127,7 @@ GameObject:
   - component: {fileID: 165657246}
   - component: {fileID: 165657245}
   - component: {fileID: 165657244}
+  - component: {fileID: 165657249}
   m_Layer: 8
   m_Name: Bullet Box Player
   m_TagString: Untagged
@@ -1265,6 +1266,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &165657249
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165657243}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4aca8e06ffac29c4392e0dee7deb6e19, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &222139254
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,8 +6215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 503.44107, y: -181}
-  m_SizeDelta: {x: 219.4821, y: 50}
+  m_AnchoredPosition: {x: 544.0466, y: -181}
+  m_SizeDelta: {x: 300.693, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2119542433
 CanvasRenderer:
@@ -6327,6 +6348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: AIC Agent
   enemyHP: 20
+  enemyMaxHP: 20
   enemydamage: 4
   enemyEXP: 40
 --- !u!114 &2134698563

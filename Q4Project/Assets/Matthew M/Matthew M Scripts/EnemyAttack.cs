@@ -15,7 +15,9 @@ public class EnemyAttack : MonoBehaviour
         {
             target.TakeDamage(enemyattack.enemydamage);
             Heart.GetComponent<BoxCollider2D>().enabled = false;
+            Heart.GetComponent<Animator>().enabled = true;
             yield return new WaitForSeconds(IFrames);
+            Heart.GetComponent<Animator>().enabled = false;
             Heart.GetComponent<BoxCollider2D>().enabled = true;
         }
     }

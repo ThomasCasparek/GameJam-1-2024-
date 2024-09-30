@@ -78,6 +78,10 @@ public class PlayerCtrl : MonoBehaviour
                 {
                     dialogueScript.TriggerDialogue();
                 }
+                else if (interactObject.gameObject.TryGetComponent(out OpenDoorScript openUp))
+                {
+                    openUp.OpenDoor();
+                }
             }
         }
 
