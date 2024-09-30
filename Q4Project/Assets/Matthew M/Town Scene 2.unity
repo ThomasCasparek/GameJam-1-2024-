@@ -116108,7 +116108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 518789013}
-  Load: Boss Room
+  Load: Pixelated Deluxe Scene
   wait: 2
 --- !u!61 &1610969090
 BoxCollider2D:

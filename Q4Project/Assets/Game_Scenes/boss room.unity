@@ -1276,8 +1276,11 @@ MonoBehaviour:
   dialogue:
     name: K1U-TZ
     sentences:
-    - How did you get in!? Well, no matter. Your life is nothing, you serve no purpose!
-      I will destroy you NOW!
+    - INITIATING...
+    - INITIATING MEAN WORDS...
+    - You... How did you get in here!?
+    - You've been a thorn in our side for a long time! You should be gone by now!
+    - So now... I will destroy you!
 --- !u!61 &562484768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7202,8 +7205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 302, y: -0.0000076293945}
-  m_SizeDelta: {x: 146.792, y: 137.6125}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 19.2357, y: 68.806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003362736
 MonoBehaviour:
@@ -7252,7 +7255,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.6
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8334,8 +8337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 397.83, y: 0.6916}
-  m_SizeDelta: {x: 86.334, y: 149.6}
+  m_AnchoredPosition: {x: 724.4364, y: 3.8903}
+  m_SizeDelta: {x: 249.5507, y: 280.8214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1652081420
 MonoBehaviour:
@@ -9503,7 +9506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082557761}
   - component: {fileID: 2082557760}
-  - component: {fileID: 2082557759}
+  - component: {fileID: 2082557762}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -9511,18 +9514,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2082557759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082557758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62397e8ac8bc8b4ba6e23c64a1516ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2082557760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9590,6 +9581,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082557762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082557758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca01e6986318694ab0696bcb4fa3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  DTS: {fileID: 562484767}
+  scenechange: {fileID: 69376131}
 --- !u!1001 &2109130063
 PrefabInstance:
   m_ObjectHideFlags: 0
